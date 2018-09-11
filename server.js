@@ -5,7 +5,7 @@ var path = require ("path");
 var app = express ();
 
 //Configure port
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 8080;
 
 //Create correct file path 
 app.use (express.static (path.join (__dirname, "./app/public")));

@@ -7,13 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" media="screen">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 
@@ -53,7 +52,7 @@
                 <form>
                     <div class="form-group">
                         <label for="name">Your Name Here:</label>
-                        <input type="text" class="form-control" id="name" placeholder="name">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
                     </div>
                     <div class="form-group">
                         <label for="photo">Your Beautiful Face Here:</label>
@@ -62,107 +61,117 @@
                 </form>
                 <div class="form-group">
                     <h3>Let the Questions Begin</h3>
-                    <label for="one">1. Socks and sandles?</label>
-                    <select class="form-control" id="one">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <label for="one">1. Socks and sandals?</label>
+                    <select class="form-control chosen-select" id="one">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="two">2. Do you wear your mittens when it's cold outside?</label>
-                    <select class="form-control" id="two">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="two">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="three">3. Loop, swoop and pull or rabbit ears?</label>
-                    <select class="form-control" id="three">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="three">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="four">4. Brown shoes and black belt?</label>
-                    <select class="form-control" id="four">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="four">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="five">5. Playing a game is fun only when you win?</label>
-                    <select class="form-control" id="five">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="five">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="six">6. Fall is the best season of the year?</label>
-                    <select class="form-control" id="six">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="six">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="seven">7. Is a hot dog a sandwich?</label>
-                    <select class="form-control" id="seven">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="seven">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="eight">8. Do you squeeze from the end or the middle fo the tube?</label>
-                    <select class="form-control" id="eight">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="eight">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="nine">9. Variety is the spice of life?</label>
-                    <select class="form-control" id="nine">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="nine">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="ten">10. Brussel sprouts?</label>
-                    <select class="form-control" id="ten">
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (Strongly Agree)</option>
+                    <select class="form-control chosen-select" id="ten">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
             </div>
-            <button type="submit" id="submitbtn" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-primary btn-lg btn-block">Submit
+            <button type="submit" id="submitbtn" data-toggle="modal" data-target="exampleModalCenter" class="btn btn-primary btn-lg btn-block">Submit
                 Answers
             </button>
         </div>
@@ -179,6 +188,7 @@
                 </div>
                 <div class="modal-body">
                     <h3 id="matchName"></h3>
+                    <br>
                     <img id="matchImage" src="">
                 </div>
                 <div class="modal-footer">
@@ -207,11 +217,13 @@
         };
 
         for (var selector in config) {
-            $(selector).chosen(config[selector]);
+            $(selector).val(config[selector]);
+            console.log($(selector).val(config[selector]));
         }
 
-        $("#submit").on("click", function (event) {
+        $("#submitbtn").on("click", function (event) {
             event.preventDefault();
+            console.log("#submit");
 
             function validate() {
                 var valid = true;
@@ -246,13 +258,15 @@
                     ]
                 };
 
+                console.log(data);
+
                 $.ajax({
                     method: "POST",
                     url: "/api/friends",
                     data: JSON.stringify(data),
                     contentType: "application/json",
-                    success: function (repsonse) {
-                        $("#matchName").text(repsonse.name)
+                    success: function (response) {
+                        $("#matchName").text(response.name)
                         $("#matchImage").attr("src", response.photo)
                         $("#friendModal").modal("toggle")
                     }
@@ -265,9 +279,8 @@
     </script>
 
     <footer class="footer">
-        <div class="container">
-            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/tywi6665/Friend-Finder">GitHub Repo
-                </a></p>
+        <div class="container footer-container">
+            <p><a href="https://github.com/tywi6665/Friend-Finder">GitHub Repo</a></p>
         </div>
     </footer>
 

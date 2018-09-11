@@ -6,11 +6,11 @@ var bodyParser = require ("body-parser");
 var app = express ();
 
 //Import friends array from friends.js
-var friendsArr = require ("../data/friends");
+var friendsArr = require ("../data/friends.js");
 
 //Use express to get info from server
 module.exports = function (app) {
-
+    console.log(friendsArr);
     app.get ("/api/friends", function (req, res) {
         return res.json (friendsArr);
     });
@@ -25,7 +25,7 @@ module.exports = function (app) {
         var userData = req.body;
         var userName= req.body.name;
         var userPhoto = req.body.photo;
-        var userScores = data.scores;
+        var userScores = req.body.scores;
 
         var friendMatch = {
             name: "",
@@ -33,14 +33,16 @@ module.exports = function (app) {
             bestDif: 1000
         };
 
-        var Diff;
+        var Dif;
         for (var i = 0; i < friendsArr.length; i++) {
             var check = friendsArr[i];
             newDif = 0;
-            console.log (check);
+            console.log (userScores);
             for (var j = 0; j < check.scores.length; j++) {
                 var checkScore = check.scores[j];
+                console.log(checkScore);
                 var userScore = userScores[j];
+                console.log(userScore);
                 newDif += Math.abs (parseInt (userScore) - parseInt (checkScore));
                 console.log (newDif)
             }
@@ -51,7 +53,7 @@ module.exports = function (app) {
             }
         };
 
-        console.log (friendMatch);
+        //console.log (friendMatch);
         friendsArr.push (userData);
         res.json (friendMatch);
     });

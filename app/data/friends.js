@@ -2,7 +2,7 @@
 var friendsArr = [
     {
         name: "Jacob",
-        photo: "/images/Jacob",
+        photo: "./images/Jacob.jpg",
         scores: [
             "5",
             "5",
@@ -18,7 +18,7 @@ var friendsArr = [
     },
     {
         name: "Jamie",
-        photo: "/images/Jamie",
+        photo: ".//images/Jamie.jpg",
         scores: [
             "1",
             "1",
@@ -34,7 +34,7 @@ var friendsArr = [
     },
     {
         name: "Tyler",
-        photo: "/images/Tyler",
+        photo: "./images/Tyler.jpg",
         scores: [
             "3",
             "3",
@@ -50,7 +50,7 @@ var friendsArr = [
     },
     {
         name: "Stephen",
-        photo: "/images/Stephen",
+        photo: "./images/Stephen.jpg",
         scores: [
             "4",
             "2",
@@ -66,7 +66,7 @@ var friendsArr = [
     },
     {
         name: "Bob",
-        photo: "/images/Bob",
+        photo: "./images/Bob.jpg",
         scores: [
             "5",
             "2",
@@ -82,7 +82,7 @@ var friendsArr = [
     },
     {
         name: "Sarah",
-        photo: "/images/Sarah",
+        photo: "./images/Sarah.jpg",
         scores: [
             "1",
             "1",
@@ -98,7 +98,7 @@ var friendsArr = [
     },
     {
         name: "Anthony",
-        photo: "/images/Anthony",
+        photo: "./images/Anthony.jpg",
         scores: [
             "3",
             "3",
@@ -114,7 +114,7 @@ var friendsArr = [
     },
     {
         name: "Wanda",
-        photo: "/images/Wanda",
+        photo: "./images/Wanda.png",
         scores: [
             "4",
             "3",
@@ -130,7 +130,7 @@ var friendsArr = [
     },
     {
         name: "Cosmo",
-        photo: "/images/Cosmo",
+        photo: "./images/Cosmo.png",
         scores: [
             "1",
             "2",
@@ -146,7 +146,7 @@ var friendsArr = [
     },
     {
         name: "Timmy",
-        photo: "/images/Timmy",
+        photo: "./images/Timmy.png",
         scores: [
             "2",
             "4",
@@ -160,4 +160,6 @@ var friendsArr = [
             "1"
         ]
     },
-]
+];
+
+module.exports = friendsArr;

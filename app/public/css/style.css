@@ -2,7 +2,28 @@
     text-align: center;
 }
 
-/* .footer {
-    height: 50%;
-    background-color: aliceblue;
-} */
+.card {
+    margin-bottom: 15%;
+}
+
+.modal-body {
+    margin: 0 auto;
+}
+
+#matchName {
+    text-align: center;
+}
+
+#matchImage {
+    height: 250px;
+    width: 250px;
+}
+
+.footer {
+    height: 8%;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    background-color: blue;
+    text-align: center;
+}
