@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Friend Finder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/home">Friend Finder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home">Home<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/survey">Survey</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Friend Finder</h1>
+            <p class="lead">Answer the following 10 questions, and prepare to add a new contact to your phone!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3>First, a Little Bit About You</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name Here:</label>
+                        <input type="text" class="form-control" id="name" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Your Beautiful Face Here:</label>
+                        <input type="text" class="form-control" id="photo" placeholder="Picture Link">
+                    </div>
+                </form>
+                <div class="form-group">
+                    <h3>Let the Questions Begin</h3>
+                    <label for="one">1. Socks and sandles?</label>
+                    <select class="form-control" id="one">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="two">2. Do you wear your mittens when it's cold outside?</label>
+                    <select class="form-control" id="two">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="three">3. Loop, swoop and pull or rabbit ears?</label>
+                    <select class="form-control" id="three">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="four">4. Brown shoes and black belt?</label>
+                    <select class="form-control" id="four">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="five">5. Playing a game is fun only when you win?</label>
+                    <select class="form-control" id="five">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="six">6. Fall is the best season of the year?</label>
+                    <select class="form-control" id="six">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="seven">7. Is a hot dog a sandwich?</label>
+                    <select class="form-control" id="seven">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="eight">8. Do you squeeze from the end or the middle fo the tube?</label>
+                    <select class="form-control" id="eight">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nine">9. Variety is the spice of life?</label>
+                    <select class="form-control" id="nine">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ten">10. Brussel sprouts?</label>
+                    <select class="form-control" id="ten">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" id="submitbtn" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-primary btn-lg btn-block">Submit
+                Answers
+            </button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Friend Match</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="matchName"></h3>
+                    <img id="matchImage" src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Sorry, slight mishap!"
+            },
+            ".chosen-select-width": {
+                width: "90%"
+            }
+        };
+
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            function validate() {
+                var valid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        valid = false;
+                    }
+                });
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") {
+                        valid = false;
+                    }
+                });
+                return valid;
+            }
+
+            if (validate()) {
+                var data = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        $("#one").val().trim(),
+                        $("#two").val().trim(),
+                        $("#three").val().trim(),
+                        $("#four").val().trim(),
+                        $("#five").val().trim(),
+                        $("#six").val().trim(),
+                        $("#seven").val().trim(),
+                        $("#eight").val().trim(),
+                        $("#nine").val().trim(),
+                        $("#ten").val().trim(),
+                    ]
+                };
+
+                $.ajax({
+                    method: "POST",
+                    url: "/api/friends",
+                    data: JSON.stringify(data),
+                    contentType: "application/json",
+                    success: function (repsonse) {
+                        $("#matchName").text(repsonse.name)
+                        $("#matchImage").attr("src", response.photo)
+                        $("#friendModal").modal("toggle")
+                    }
+                })
+            } else {
+                alert("Don't be so hasty, finish answering all those quesions!")
+            }
+        });
+
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/tywi6665/Friend-Finder">GitHub Repo
+                </a></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
