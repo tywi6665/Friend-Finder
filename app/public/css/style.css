@@ -1,9 +1,26 @@
 .jumbotron {
     text-align: center;
+    background-color: #495057;
+    color: white;
+}
+
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .card {
     margin-bottom: 15%;
+}
+
+.modal-header {
+    background-color: #495057 ;
+}
+
+.modal-title {
+    color: white;
 }
 
 .modal-body {
@@ -24,6 +41,11 @@
     width: 100%;
     position: fixed;
     bottom: 0; 
-    background-color: blue;
+    background-color: #495057;
     text-align: center;
+}
+
+.fab {
+    padding-top: 2%;
+    color: white;
 }
