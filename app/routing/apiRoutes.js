@@ -37,14 +37,14 @@ module.exports = function (app) {
         for (var i = 0; i < friendsArr.length; i++) {
             var check = friendsArr[i];
             newDif = 0;
-            console.log (userScores);
+            //console.log (userScores);
             for (var j = 0; j < check.scores.length; j++) {
                 var checkScore = check.scores[j];
-                console.log(checkScore);
+                //console.log(checkScore);
                 var userScore = userScores[j];
-                console.log(userScore);
+                //console.log(userScore);
                 newDif += Math.abs (parseInt (userScore) - parseInt (checkScore));
-                console.log (newDif)
+                //console.log (newDif)
             }
             if (newDif <= friendMatch.bestDif) {
                 friendMatch.name = check.name;
@@ -54,8 +54,9 @@ module.exports = function (app) {
         };
 
         //console.log (friendMatch);
-        friendsArr.push (userData);
         res.json (friendMatch);
+        friendsArr.push (userData);
+        
     });
 
 };
